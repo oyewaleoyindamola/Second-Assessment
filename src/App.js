@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Userinput from "./Userinput";
+import Userouput from "./Userouput";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<Userinput />
+  
+      <Userouput
+        p1="This is my second assessment and i dont know how i feel about it. I would love to say a few things about it but i am honesty speechless"
+        p2="This is my second assessment and i dont know how i feel about it. I would love to say a few things about it but i am honesty speechless"
+      />
+            <Userouput
+        p1="This is my second assessment and i dont know how i feel about it. I would love to say a few things about it but i am honesty speechless"
+        p2="This is my second assessment and i dont know how i feel about it. I would love to say a few things about it but i am honesty speechless"
+      />
+            <Userouput
+        p1="This is my second assessment and i dont know how i feel about it. I would love to say a few things about it but i am honesty speechless"
+        p2="This is my second assessment and i dont know how i feel about it. I would love to say a few things about it but i am honesty speechless"
+      />
     </div>
   );
 }
