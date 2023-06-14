@@ -24,12 +24,12 @@
 .container, .userOutput{
   font-size: 2rem;
   font-style: italic;
-  color: white;
    border-radius: 0.5rem;
 }
 /* this is the style for the useroutput */
 .userOutput{
   margin-bottom: 2rem;
+  color: white;
 }
 /* /* this is the style for the useriutput  */
 .userInput input{
@@ -37,4 +37,5 @@
   font-size: 2rem;
   font-style: italic;
   border-radius: 0.5rem;
+
 }
