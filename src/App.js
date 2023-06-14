@@ -1,26 +1,31 @@
-import "./App.css";
-import Userinput from "./Userinput";
-import Userouput from "./Userouput";
+import React, { Component } from 'react'
+import Userinput from "./Component/Userinput";
+import Useroutput from "./Component/Useroutput";
+import "./App.css"
 
-function App() {
-  return (
-    <div className="App">
-<Userinput />
-  
-      <Userouput
-        p1="This is my second assessment and i dont know how i feel about it. I would love to say a few things about it but i am honesty speechless"
-        p2="This is my second assessment and i dont know how i feel about it. I would love to say a few things about it but i am honesty speechless"
-      />
-            <Userouput
-        p1="This is my second assessment and i dont know how i feel about it. I would love to say a few things about it but i am honesty speechless"
-        p2="This is my second assessment and i dont know how i feel about it. I would love to say a few things about it but i am honesty speechless"
-      />
-            <Userouput
-        p1="This is my second assessment and i dont know how i feel about it. I would love to say a few things about it but i am honesty speechless"
-        p2="This is my second assessment and i dont know how i feel about it. I would love to say a few things about it but i am honesty speechless"
-      />
-    </div>
-  );
+export default class App extends Component {
+  // this is the initial stage
+  state = {
+    username: "Wura"
+  }
+  // this is the function that allows the user to input their desired name using the input tag
+  nameChangerHandler = (e) =>{
+    this.setState({
+        username: e.target.value
+    })
 }
 
-export default App;
+  render() {
+    return (
+      <div className='app'>
+        <div className='container'>
+        <Useroutput username={this.state.username}/> 
+        <Userinput nameChangerHandler = {this.nameChangerHandler}/>
+        </div>
+      </div>
+    )
+  }
+}
+
+
+
